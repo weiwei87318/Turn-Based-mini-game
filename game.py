@@ -38,14 +38,16 @@ class Fight:
             player.hp += overdamage   
 
 #建立魔物objects
-哥布林 = Monster("哥布林",50,15,0)
-火精靈 = Monster("火精靈",80,15,35)
-惡狼犬 = Monster("惡狼犬",50,20,15)
-敵方 = Monster("敵方",220,30,0)
+#玩家魔物
+playerMonster1 = Monster("哥布林",50,15,0)
+playerMonster2 = Monster("火精靈",80,15,35)
+playerMonster3 = Monster("惡狼犬",50,20,15)
+#敵方魔物
+enemyMonster = Monster("敵方",220,30,0)
 
 #雙方狀態
-playerStatus = [哥布林,火精靈,惡狼犬]
-enemyStatus = 敵方
+playerStatus = [playerMonster1,playerMonster2,playerMonster3]
+enemyStatus = enemyMonster
 
 #戰鬥開始
 print("戰鬥開始!")
